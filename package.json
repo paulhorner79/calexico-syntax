@@ -2,7 +2,7 @@
   "name": "calexico-syntax",
   "theme": "syntax",
   "version": "0.0.1",
-  "description": "This is a github syntax theme, currently based on FireCode but that might change.",
+  "description": "This is an Atom syntax theme, currently based on FireCode but that might change.",
   "keywords": [
     "syntax",
     "theme"
