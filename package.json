@@ -1,8 +1,8 @@
 {
   "name": "calexico-syntax",
   "theme": "syntax",
-  "version": "0.0.1",
-  "description": "This is an Atom syntax theme, currently based on FireCode but that might change.",
+  "version": "0.1.0",
+  "description": "This is a basic syntax theme for the Atom editor.",
   "keywords": [
     "syntax",
     "theme"
