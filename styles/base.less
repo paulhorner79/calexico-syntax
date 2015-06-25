@@ -24,8 +24,9 @@ atom-text-editor, :host { /* :host added */
     }
 
     .wrap-guide {
-        color: @syntax-wrap-guide-color;
-        opacity: 0.8;
+        width: 1px;
+        background-color: @syntax-wrap-guide-color;
+        opacity: 0.6;
     }
 
     .indent-guide {
@@ -40,17 +41,18 @@ atom-text-editor, :host { /* :host added */
     .search-results .marker.current-result .region {
         border: @syntax-result-marker-color-selected;
     }
-}
-
-atom-text-editor.is-focused {
-    .cursor {
-        border-color: @syntax-cursor-color;
-    }
 
     .selection .region {
         background-color: @syntax-selection-color;
     }
+
+    .wrap-guide {
+        width: 1px;
+        background-color: @syntax-wrap-guide-color;
+        opacity: 0.6;
+    }
 }
+
 
 /** CONSTANTS are orange, string is yellow **/
 .comment {
@@ -96,10 +98,11 @@ atom-text-editor.is-focused {
 
 /** STORAGE - cyan **/
 .storage {
-    color: @cyan;
+    color: @red;
 }
 
 .storage.type {
+    color: @cyan;
     font-style: italic;
 }
 
@@ -203,7 +206,7 @@ atom-text-editor.is-focused {
 
 /** HTML **/
 .entity.name.tag.html {
-    color: @green;
+    color: @red;
 }
 .punctuation.definition.tag.html {
     //color: @green;
