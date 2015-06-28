@@ -2,7 +2,7 @@
   "name": "calexico-syntax",
   "theme": "syntax",
   "version": "0.1.0",
-  "description": "This is a basic syntax theme for the Atom editor.",
+  "description": "This is a dark Atom syntax theme with custom layouts for CSS, PHP, HTML, and JSON.",
   "keywords": [
     "syntax",
     "theme"
