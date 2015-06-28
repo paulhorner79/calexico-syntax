@@ -1,7 +1,7 @@
 {
   "name": "calexico-syntax",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This is a dark Atom syntax theme with custom layouts for CSS, PHP, HTML, and JSON.",
   "keywords": [
     "syntax",
