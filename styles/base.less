@@ -1,6 +1,7 @@
 @import "syntax-variables";
 
-atom-text-editor, :host { /* :host added */
+/* CSS Comment */
+atom-text-editor, :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
 
@@ -44,6 +45,10 @@ atom-text-editor, :host { /* :host added */
 
     .selection .region {
         background-color: @syntax-selection-color;
+    }
+
+    .line.cursor-line {
+        background-color: lighten(@syntax-background-color, 3%);
     }
 
     .wrap-guide {
@@ -102,7 +107,7 @@ atom-text-editor, :host { /* :host added */
 }
 
 .storage.type {
-    color: @cyan;
+    color: @green;
     font-style: italic;
 }
 
@@ -208,9 +213,6 @@ atom-text-editor, :host { /* :host added */
 .entity.name.tag.html {
     color: @red;
 }
-.punctuation.definition.tag.html {
-    //color: @green;
-}
 .entity.other.attribute-name.html {
     color: @orange;
 }
@@ -219,12 +221,12 @@ atom-text-editor, :host { /* :host added */
 }
 .punctuation.section.embedded.begin.php,
 .punctuation.section.embedded.end.php {
-    color: @light-blue;
-    font-style: italic;
+    color: @cyan;
+    font-weight: bold;
 }
 .meta.tag.doctype.html {
-    color: @green;
-    font-style: italic;
+    color: @cyan;
+    font-weight: bold;
 }
 
 /** JSON **/
@@ -249,11 +251,8 @@ atom-text-editor, :host { /* :host added */
 .entity.other.attribute-name.class.css {
     color: @light-blue;
 }
-.variable.other.less {
-    //color: @light-purple;
-}
 .support.type.property-name.css {
-    color: @green;
+    color: @cyan;
 }
 
 /** OTHER **/
@@ -265,24 +264,23 @@ atom-text-editor, :host { /* :host added */
 .source.gfm .markup {
     -webkit-font-smoothing: auto;
     &.heading {
-        color: @light-green;
+        color: @syntax-color-added;
     }
 }
 
 /** git updates **/
 .git-line-added,
-.git-line-added:before
- {
-    color: @green;
+.git-line-added:before {
+    color: @syntax-color-added;
     opacity: 1;
 }
 .git-line-modified,
 .git-line-modified:before {
-    color: @yellow;
+    color: @syntax-color-modified;
     opacity: 1;
 }
 .git-line-removed,
 .git-line-removed:before {
-    color: @red;
+    color: @syntax-color-removed;
     opacity: 1;
 }
