@@ -13,3 +13,6 @@
 * Switched some use of Cyan and Green
 * Updated Git diff colours
 * Added background colour to current line
+
+## 0.5.0 - Bugfixes for Atom 1.13
+* Removed deprecated selectors

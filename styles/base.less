@@ -1,7 +1,7 @@
 @import "syntax-variables";
 
 /* CSS Comment */
-atom-text-editor, :host {
+atom-text-editor {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
 
@@ -34,12 +34,12 @@ atom-text-editor, :host {
         color: @syntax-indent-guide-color;
     }
 
-    .search-results .marker .region {
+    .search-results .syntax--marker .region {
         background-color: transparent;
         border: @syntax-result-marker-color;
     }
 
-    .search-results .marker.current-result .region {
+    .search-results .syntax--marker.current-result .region {
         border: @syntax-result-marker-color-selected;
     }
 
@@ -60,227 +60,227 @@ atom-text-editor, :host {
 
 
 /** CONSTANTS are orange, string is yellow **/
-.comment {
+.syntax--comment {
     color: @gray;
 }
 
-.string {
+.syntax--string {
     color: @light-yellow;
 }
 
-.constant {
+.syntax--constant {
     color: @orange;
     font-weight: bold;
 }
-.constant.numeric,
-.constant.language,
-.constant.character,
-.constant.other {
+.syntax--constant.syntax--numeric,
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
 
 }
 
 /** VARIABLES **/
-.variable {
+.syntax--variable {
 
 }
-.variable.parameter {
+.syntax--variable.syntax--parameter {
     color: @light-purple;
     font-style: italic;
 }
 
-.variable.language.namespace {
+.syntax--variable.syntax--language.syntax--namespace {
 
 }
 
-.variable.other {
+.syntax--variable.syntax--other {
 
 }
 /** KEYWORDS - bold red */
-.keyword {
+.syntax--keyword {
     color: @red;
     font-weight: bold;
 }
 
 /** STORAGE - cyan **/
-.storage {
+.syntax--storage {
     color: @red;
 }
 
-.storage.type {
+.syntax--storage.syntax--type {
     color: @green;
     font-style: italic;
 }
 
 /** ENTITIES - blue **/
-.entity {
+.syntax--entity {
     color: @blue;
 }
-.entity.name {
+.syntax--entity.syntax--name {
 
 }
-.entity.name.class {
+.syntax--entity.syntax--name.syntax--class {
     text-decoration: underline;
 }
-.entity.name.tag {
+.syntax--entity.syntax--name.syntax--tag {
     color: @light-blue;
 }
-.entity.other {
+.syntax--entity.syntax--other {
 
 }
-.entity.other.inherited-class {
+.syntax--entity.syntax--other.syntax--inherited-class {
     font-style: italic;
     text-decoration: underline;
 }
-.entity.other.attribute-name.class {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class {
 
 }
 
-.support.function {
+.syntax--support.syntax--function {
     color: @cyan;
 }
-.support.function.magic {
+.syntax--support.syntax--function.syntax--magic {
     font-style: italic;
 }
-.support.function.misc {
+.syntax--support.syntax--function.syntax--misc {
 
 }
 
 /** SUPPORT - purple **/
-.support {
+.syntax--support {
     color: @light-purple;
 }
-.support.punctuation {
+.syntax--support.syntax--punctuation {
     color: @syntax-text-color;
 }
-.support.constant {
+.syntax--support.syntax--constant {
     color: @orange;
 }
-.support.type {
+.syntax--support.syntax--type {
     font-style: italic;
 }
-.support.namespace {
+.syntax--support.syntax--namespace {
     text-decoration: underline;
 }
-.support.class {
+.syntax--support.syntax--class {
 
 }
-.support.other.variable {
+.syntax--support.syntax--other.syntax--variable {
 
 }
-.support.other.namespace {
+.syntax--support.syntax--other.syntax--namespace {
 
 }
-.support.other.namespace.use-as.php {
+.syntax--support.syntax--other.syntax--namespace.syntax--use-as.syntax--php {
     font-style: italic;
 }
 
 /** PUNCTUATION **/
-.punctuation.separator.inheritance {
+.syntax--punctuation.syntax--separator.syntax--inheritance {
 
 }
 
 /** META **/
-.meta.function-call {
+.syntax--meta.syntax--function-call {
 
 }
-.meta.function-call.object {
-	font-style: italic;
+.syntax--meta.syntax--function-call.syntax--object {
+    font-style: italic;
 }
-.meta.function-call.other {
+.syntax--meta.syntax--function-call.syntax--other {
 
 }
-.meta.tag.template.value {
+.syntax--meta.syntax--tag.syntax--template.syntax--value {
 
 }
-.meta.tag.template.block {
+.syntax--meta.syntax--tag.syntax--template.syntax--block {
 
 }
-.meta.embedded.echo {
+.syntax--meta.syntax--embedded.syntax--echo {
     background-color: @dark-gray;
 }
 
 /** INVALID **/
-.invalid {
+.syntax--invalid {
     color: @very-light-gray;
     background-color: @red;
 }
-.invalid .deprecated {
-	color: @dark-gray;
-	background-color: @light-red;
+.syntax--invalid .syntax--deprecated {
+    color: @dark-gray;
+    background-color: @light-red;
 }
 
 /** HTML **/
-.entity.name.tag.html {
+.syntax--entity.syntax--name.syntax--tag.syntax--html {
     color: @red;
 }
-.entity.other.attribute-name.html {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--html {
     color: @orange;
 }
-.string.quoted.single.html {
+.syntax--string.syntax--quoted.syntax--single.syntax--html {
     color: @yellow;
 }
-.punctuation.section.embedded.begin.php,
-.punctuation.section.embedded.end.php {
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--begin.syntax--php,
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--end.syntax--php {
     color: @cyan;
     font-weight: bold;
 }
-.meta.tag.doctype.html {
+.syntax--meta.syntax--tag.syntax--doctype.syntax--html {
     color: @cyan;
     font-weight: bold;
 }
 
 /** JSON **/
-.meta.structure.dictionary.json .string.double.quoted.json,
-.meta.structure.dictionary.json .punctuation.definition.string.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--string.syntax--double.syntax--quoted.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json .syntax--punctuation.syntax--definition.syntax--string.syntax--json {
     color: @light-blue;
 }
-.meta.structure.dictionary.value.json .string.double.quoted.json,
-.meta.structure.dictionary.value.json .punctuation.definition.string.json {
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--string.syntax--double.syntax--quoted.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json .syntax--punctuation.syntax--definition.syntax--string.syntax--json {
     color: @orange;
 }
-.punctuation.json {
+.syntax--punctuation.syntax--json {
 
 }
 /** JS **/
-.punctuation.definition.string.js,
-.entity.name.function.js {
+.syntax--punctuation.syntax--definition.syntax--string.syntax--js,
+.syntax--entity.syntax--name.syntax--function.syntax--js {
     color: @blue;
 }
 
 /** CSS **/
-.entity.other.attribute-name.class.css {
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--class.syntax--css {
     color: @light-blue;
 }
-.support.type.property-name.css {
+.syntax--support.syntax--type.syntax--property-name.syntax--css {
     color: @cyan;
 }
 
 /** OTHER **/
-.focusable-panel {
+.syntax--focusable-panel {
     opacity: 1;
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 }
 
-.source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
     -webkit-font-smoothing: auto;
-    &.heading {
+    &.syntax--heading {
         color: @syntax-color-added;
     }
 }
 
 /** git updates **/
-.git-line-added,
-.git-line-added:before {
+.syntax--git-line-added,
+.syntax--git-line-added:before {
     color: @syntax-color-added;
     opacity: 1;
 }
-.git-line-modified,
-.git-line-modified:before {
+.syntax--git-line-modified,
+.syntax--git-line-modified:before {
     color: @syntax-color-modified;
     opacity: 1;
 }
-.git-line-removed,
-.git-line-removed:before {
+.syntax--git-line-removed,
+.syntax--git-line-removed:before {
     color: @syntax-color-removed;
     opacity: 1;
 }
