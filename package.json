@@ -1,7 +1,7 @@
 {
   "name": "calexico-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "This is a dark syntax theme for the Atom editor.",
   "keywords": [
     "syntax",
